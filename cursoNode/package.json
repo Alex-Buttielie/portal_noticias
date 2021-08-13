@@ -9,7 +9,12 @@
   "author": "Alex-Buttielie",
   "license": "ISC",
   "dependencies": {
+    "consign": "^0.1.6",
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "pg": "^8.7.1",
+    "postgresql": "0.0.1",
+    "sql": "^0.78.0"
   }
 }

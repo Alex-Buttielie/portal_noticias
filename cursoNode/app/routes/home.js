@@ -1,5 +1,16 @@
 module.exports = function (app) {
     app.get('/', function (req, res) {
-        res.render("home/index");
+
+        var client = app.config.dbConnection();
+
+        var query = 'selehomect * from ';
+
+        client.query(' ', function (error, result) {
+            res.render("home/index", { index: result.rows });
+        });
+
     });
 }
+
+
+

@@ -9,7 +9,7 @@ NoticiasDAO.prototype.getNoticias = function (callback) {
 }
 
 NoticiasDAO.prototype.getNoticia = function (callback) {
-    var query = 'select * from noticias where id_noticias = 24';
+    var query = 'select * from noticias where id_noticias = 28';
     this._connection.query(query, callback);
 
 }
